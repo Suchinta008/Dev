@@ -63,17 +63,18 @@ h3 {
 }
 
 #intro {
-    width: 50%;
+    width: 60%;
     margin: 20% auto;
-    border-top: 5px solid #1C6EA4;
+    /* border-top: 5px solid #1C6EA4; */
     border-radius: 15%;
-    border-bottom: 10px solid #1C6EA4;
+    /* border-bottom: 10px solid #1C6EA4; */
     cursor: auto;
+    box-shadow: .5rem .5rem .5rem rgba(54, 35, 35, 0.541) , -.3rem -.3rem .3rem rgba(54, 35, 35, 0.541);
 }
 
 .about {
     width: 100%;
-    text-decoration: dashed underline;
+    /* text-decoration: dashed underline; */
     text-align: center;
     color: rgb(92, 233, 92);
     font-size: 80px;
@@ -111,28 +112,39 @@ h3 {
 }
 
 #skills {
-    width: 50%;
+    width: 80%;
+    height: 60vh;
     margin: auto;
     border-radius: 5%;
-    border-bottom: 15px solid #1C6EA4;
+    /* border-bottom: 15px solid #1C6EA4; */
+    /* border: 2px solid #000; */
+    box-shadow: .5rem .5rem .5rem rgba(54, 35, 35, 0.541) , -.3rem -.3rem .3rem rgba(54, 35, 35, 0.541);
     cursor: auto;
     position: relative;
+    transition: all .2s ease;
+}
+#skills:hover{
+    box-shadow: .7rem .7rem .7rem rgba(54, 35, 35, 0.541) , -.5rem -.5rem .5rem rgba(54, 35, 35, 0.541);
+    transition: all .4s ease;
 }
 
 h2 {
     width: 100%;
-    text-decoration: dashed underline;
+    /* text-decoration: dashed underline; */
     text-align: center;
-    color: rgb(92, 233, 92);
+    color: rgb(0, 105, 0);
     font-size: 80px;
+    text-shadow: .2rem .2rem .2rem rgba(54, 35, 35, 0.541);
 }
 
 .skill1 {
-    width: 80%;
-    font-size: 40px;
+    width: 95%;
+    font-size: 20px;
     position: relative;
-    text-align: left;
+    text-align: justify;
+    text-shadow: .1rem .1rem .1rem gold;
 }
+
 
 .img2 {
     padding: 5%;
@@ -148,6 +160,26 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 10%;
     background-color: aqua;
+}
+
+#footer h1{
+    color: #000;
+    animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor{
+    20%{
+        color: goldenrod;
+    }
+    50%{
+        color: maroon;
+    }
+    75%{
+        color: darkviolet;
+    }
+    90%{
+        color: lightsalmon;
+    }
 }
 
 /* dark mode code */
